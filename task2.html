@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add hello</title>
+</head>
+<body>
+    <button type="buttton" onclick="hello()">Add hello</button>
+    <p id="txt"></p>
+    <script>
+      let  txt=document.getElementById("txt");
+        function hello(){
+            let h1=document.createElement("h1");<h1></h1>
+            h1.textContent="hello";
+            txt.append(h1);
+            
+        }
+    </script>
+</body>
+</html>

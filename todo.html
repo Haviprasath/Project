@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one">
+        <h1>bye</h1>
+    </div>
+    <h1>one</h1>
+    <h1>two </h1>
+    <h1>three</h1>
+    <div class="demo">
+        welcome
+    </div>
+    <div class="demo2">
+        <h1>havi</h1>
+        <h1>john</h1>
+    </div>
+    <script>
+        let div=document.getElementById("one");
+        div.innerHTML="<img src=' ' alt='photo'> ";
+        console.log(div.textContent);
+        let txt=document.querySelectorAll("h1");
+        for(i=0;i<txt.length;i++){
+        console.log(txt[i].textContent);
+        }
+        let txt2=document.getElementsByClassName("demo");
+        console.log(txt2);
+        let h2=document.createElement("h2");
+        h2.textContent="haviprasath";
+        console.log(h2.textContent);
+        
+        let demo2=document.querySelector(".demo2");
+        let txt3=document.createElement("h1");
+        txt3.innerHTML="hello";
+        demo2.insertAdjacentElement("afterbegin",txt3);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="textbox" onkeyup="displaytext()">
+    <button type="button" >click</button>
+    <h1 id="showtext"></h1>
+    <script>
+        let textbox=document.getElementById("textbox");
+        let showtext=document.getElementById("showtext");
+        function displaytext(){
+        showtext.textContent=textbox.value;
+        let text=showtext.textContent;
+        
+        }
+    </script>
+</body>
+</html>

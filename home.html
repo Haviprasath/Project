@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>practice</title>
+    <style>
+    #mybox{
+        background-color:lightgreen;
+        height: 300px;
+        width: 300px;
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+        
+      }
+    </style>
 </head>
 <body>
-    
+  <h1>welcome my page</h1>
+  <h2 id="demo">thanks!!</h2>
+  <button type="button" onclick="myfunc()" >click</button>
+  <button type="button" onclick="display()">show/hide</button>
+  <button type="button" onclick="document.getElementById('demo2').innerHTML=Date()">try time</button>
+  <p id="demo2"></p>
+  <div onmouseover="this.style.backgroundColor='red'" onmouseout="this.style.backgroundColor='black'" onchange="welocme">myDIV.</div>
+  <div id="mybox">
+    click me
+  </div>
+  <div>
+    <td>num1<input  id="num1" value=34></td>
+    <td>num2<input  id="num2" value=23></td>
+    <button type="button" onclick="answer()">total</button>
+    <p id="total">result</p>
+  </div>
+<div>
+  <h1>A random number create</h1>
+    <button type="button" onclick="random()">Random</button>
+    <p id="number"></p>
+</div>
+  <script src="C:\Users\DELL\Desktop\Web\Project/index.js"></script>
 </body>
 </html>

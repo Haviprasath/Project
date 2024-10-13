@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .box{
+            background-color: aqua;
+           display:inline-block;
+            height: 100px;
+            width: 100px;
+            margin-right: 30px;
+           
+        }
+        
+        @media screen and (min-width:0px){
+            .box{
+                flex: auto;
+            }
+        }
+        @media screen and (min-width:640px){
+            .box{
+               flex
+            }
+        }
+        @media screen and (max-width:1007px){
+            .box{
+                float:left
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="box" style="background-color: purple;"></div>
+    <div class="box" style="background-color: yellowgreen;"></div>
+    <div class="box" style="background-color: blue;"></div>
+</body>
+</html>
